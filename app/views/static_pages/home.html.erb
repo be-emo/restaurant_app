@@ -3,10 +3,6 @@
 <p id = "status"></p>
 <a id = "map-link" target="_blank"></a>
 
-<% api = "https://webservice.recruit.co.jp/hotpepper/gourmet/v1/?"
-
-%>
-
 <script type="text/javascript">
 function geoFindMe() {
 
@@ -17,6 +13,7 @@ function geoFindMe() {
   mapLink.textContent = '';
 
   function success(position) {
+    // 以下2つの変数をrails上でも操作できるようにしたい
     const latitude  = position.coords.latitude;
     const longitude = position.coords.longitude;
 

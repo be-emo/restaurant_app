@@ -26,11 +26,11 @@ Ruby (Ruby on Rails)
 
 ## 動作対象端末・OS
 ### 動作対象OS
-OS：iOS, Windowsで動作確認済み<br>
-ブラウザ：Chrome,Edge,Firefoxで動作確認済み
+OS：iOS、Windowsで動作確認済み<br>
+ブラウザ：Chrome、Edge、Firefoxで動作確認済み
 
 ## 開発期間
-14日間 (16時間04分)
+14日間（16時間04分）
 
 ## アプリケーション機能
 

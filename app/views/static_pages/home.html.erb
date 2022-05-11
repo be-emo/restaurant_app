@@ -1,6 +1,7 @@
 <h1>Restaurant Search</h1>
 <a href="https://webservice.recruit.co.jp/"><img src="https://webservice.recruit.co.jp/banner/hotpepper-s.gif" alt="ホットペッパー Webサービス" width="135" height="17" border="0" title="ホットペッパー Webサービス"></a>
 <h1>現在地を取得しグルメサーチAPIを利用して近隣のお店を表示します。</h1>
+
 <div class="top">
   <form>
     <label for="ranges">検索範囲</label>
@@ -14,6 +15,7 @@
   </form>
   <button value="1" data-page="1">現在地取得</button><br />
 </div>
+
 <p class="status"></p>
 <a class="map-link" target="_blank" rel="noopener"></a>
 <h2></h2>
@@ -21,6 +23,7 @@
 <span></span>
 <div class="next"></div>
 <div class="main"></div>
+
 <template id="template">
   <ul>
     <li class="name"><a class="shop"></a></li>
@@ -135,8 +138,8 @@ function getPosition(event) {
 }
 // グルメサーチAPIから取得したjsonの内容をjavascriptでhtmlに反映させる関数
 function renderJson(json) {
-  document.querySelector(".main").innerHTML = "";
-  document.querySelector("span").innerHTML = "";
+  document.querySelector(".main").innerHTML = ""; // mainクラス内に空文字列を挿入
+  document.querySelector("span").innerHTML = "";  // spanタグに空文字列を挿入
   document.querySelector(
     "h2"
   ).textContent = `${json.results.results_available}件見つかりました。距離の近い順に表示しています。`;
